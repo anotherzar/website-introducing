@@ -1,0 +1,171 @@
+body {
+  background-color: #131313; /* Warna latar belakang gelap */
+  color: #fff; /* Warna tulisan putih */
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Viewport Height */
+  margin: 0;
+}
+
+.banner {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1e94d557441295.59d5dfd469876.gif"); /* Ganti dengan URL gambar Anda */
+  background-size: cover; /* Menutupi seluruh area div, mungkin ter-crop */
+  background-position: center; /* Menengahkan gambar */
+  height: 20vh; /* Tinggi banner, vh = persentase dari tinggi viewport */
+  display: block; /* Memastikan div ditampilkan sebagai block */
+  margin-bottom: 20px; /* Memberikan sedikit ruang antara banner dan header */
+}
+
+header h1 {
+  margin-top: 20px; /* Memberikan jarak atas 20px antara banner dan h1 */
+  background: -webkit-linear-gradient(left, #007cf0, #00dfd8); /* Gradient untuk WebKit browsers */
+  background: linear-gradient(to right, #007cf0, #00dfd8); /* Gradient standar */
+  -webkit-background-clip: text; /* Memotong background sesuai teks untuk WebKit browsers */
+  background-clip: text;
+  color: transparent; /* Membuat teks transparan untuk menampilkan gradient */
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan untuk WebKit browsers */
+  background-size: 200% 200%; /* Membuat ukuran background lebih besar untuk animasi */
+  animation: gradientAnimation 4s ease infinite; /* Menerapkan animasi */
+  font-size: 42px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.introduction {
+  background-color: #242424; /* Warna latar belakang sedikit lebih terang dari body */
+  color: #fff; /* Warna teks putih */
+  padding: 14px; /* Padding di dalam section */
+  margin: 20px auto; /* Margin atas dan bawah untuk memberi ruang, auto untuk menengahkan secara horizontal */
+  border-radius: 10px; /* Sudut yang bulat */
+  width: 100%; /* Menetapkan lebar untuk .introduction */
+  max-width: 600px; /* Menetapkan lebar maksimum untuk memastikan tidak terlalu lebar pada layar besar */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+}
+
+.introduction h2,
+.introduction p {
+  text-align: center; /* Menengahkan teks h2 dan p */
+}
+
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Menengahkan card secara horizontal */
+  gap: 20px; /* Memberikan jarak antar card */
+  padding: 20px 0; /* Padding atas dan bawah untuk section */
+}
+
+.card {
+  width: 200px; /* Atau lebar yang diinginkan */
+  border: 1px solid #ddd; /* Border untuk card */
+  border-radius: 10px; /* Sudut bulat untuk card */
+  overflow: hidden; /* Memastikan konten tidak melebihi batas card */
+}
+
+.card-image {
+  width: 100%; /* Membuat gambar memenuhi lebar card */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.card-description {
+  padding: 10px; /* Padding di dalam card untuk teks */
+  text-align: center; /* Menengahkan teks */
+  font-weight: 300;
+}
+
+.links {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-direction: column; /* Mengatur item flex agar berurutan secara vertikal */
+  align-items: center; /* Menengahkan item secara horizontal */
+  justify-content: center; /* Opsional: Menengahkan item secara vertikal jika diperlukan */
+  text-align: center; /* Menengahkan teks pada link */
+}
+
+a {
+  color: #fff; /* Warna link putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  margin: 10px 0; /* Memberikan jarak atas bawah pada link */
+  border: 2px solid #fff; /* Memberikan border putih dengan ketebalan 2px */
+  border-radius: 10px; /* Membuat sudut border menjadi bulat */
+  padding: 10px 20px; /* Memberikan padding untuk membuat link lebih besar */
+  display: inline-block; /* Mengubah display menjadi inline-block untuk menengahkan */
+  width: 200px; /* Menetapkan lebar yang sama untuk semua link */
+  text-align: center; /* Menengahkan teks di dalam link */
+  box-sizing: border-box; /* Memastikan lebar total termasuk padding dan border */
+}
+
+a:hover {
+  color: #ddd; /* Warna link saat di-hover */
+}
+
+header {
+  display: flex; /* Mengaktifkan Flexbox */
+  align-items: center; /* Menengahkan item secara vertikal */
+  justify-content: center; /* Menjajar item dari awal container */
+  gap: 300px; /* Memberikan jarak antara gambar dan h1 */
+  flex-direction: row-reverse;
+}
+
+.pfp {
+  width: 100px; /* Atau ukuran lain sesuai kebutuhan */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #1a1a1a; /* Contoh warna background gelap */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main {
+  flex: 1;
+}
+
+.Project {
+  text-align: center;
+  margin-top: 74px;
+}
+
+/* Media query untuk layar dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+  header {
+    display: flex; /* Mengaktifkan Flexbox */
+    align-items: center; /* Menengahkan item secara vertikal */
+    justify-content: center; /* Menjajar item dari awal container */
+    gap: 80px; /* Memberikan jarak antara gambar dan h1 */
+    flex-direction: row-reverse;
+  }
+
+  header {
+    flex-direction: row-reverse; /* Menjaga item berdampingan juga pada layar kecil */
+    padding: 10px 0;
+  }
+
+  .introduction {
+    width: 80%;
+  }
+
+  .pfp {
+    width: 80px; /* Menyesuaikan ukuran gambar untuk layar yang lebih kecil */
+    height: 80px;
+  }
+
+  header h1 {
+    font-size: 42px; /* Menyesuaikan ukuran font untuk layar yang lebih kecil */
+  }
+}
