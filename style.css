@@ -1,5 +1,5 @@
 body {
-  background-color: #131313; /* Warna latar belakang gelap */
+  background-color: #23272a; /* Warna latar belakang gelap */
   color: #fff; /* Warna tulisan putih */
   font-family: "Work Sans", sans-serif;
   display: flex;
@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1e94d557441295.59d5dfd469876.gif"); /* Ganti dengan URL gambar Anda */
+  background-image: url("https://i.pinimg.com/originals/d7/33/34/d733345e4f11231904e7634a04439e21.gif"); /* Ganti dengan URL gambar Anda */
   background-size: cover; /* Menutupi seluruh area div, mungkin ter-crop */
   background-position: center; /* Menengahkan gambar */
   height: 20vh; /* Tinggi banner, vh = persentase dari tinggi viewport */
@@ -28,6 +28,8 @@ header h1 {
   background-size: 200% 200%; /* Membuat ukuran background lebih besar untuk animasi */
   animation: gradientAnimation 4s ease infinite; /* Menerapkan animasi */
   font-size: 42px;
+  margin-left: 38%;
+  margin-top: 1px;
 }
 
 @keyframes gradientAnimation {
@@ -43,19 +45,28 @@ header h1 {
 }
 
 .introduction {
-  background-color: #242424; /* Warna latar belakang sedikit lebih terang dari body */
+  background-color: #0d1117; /* Warna latar belakang sedikit lebih terang dari body */
   color: #fff; /* Warna teks putih */
   padding: 14px; /* Padding di dalam section */
   margin: 20px auto; /* Margin atas dan bawah untuk memberi ruang, auto untuk menengahkan secara horizontal */
   border-radius: 10px; /* Sudut yang bulat */
   width: 100%; /* Menetapkan lebar untuk .introduction */
-  max-width: 600px; /* Menetapkan lebar maksimum untuk memastikan tidak terlalu lebar pada layar besar */
+  max-width: 700px; /* Menetapkan lebar maksimum untuk memastikan tidak terlalu lebar pada layar besar */
   box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+  box-shadow: 0 0 0 0.5px #ffffff9f;
+}
+.introduction h2{
+    text-align: left;
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+    font-size: 14px;
 }
 
-.introduction h2,
-.introduction p {
-  text-align: center; /* Menengahkan teks h2 dan p */
+.MyDetail {
+  text-align: left; /* Menengahkan teks h2 dan p */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 12px;
+  border-radius: 8px;
 }
 
 .image-cards {
@@ -92,7 +103,7 @@ header h1 {
   text-align: center; /* Menengahkan teks pada link */
 }
 
-a {
+.buttons {
   color: #fff; /* Warna link putih */
   text-decoration: none; /* Menghilangkan garis bawah pada link */
   margin: 10px 0; /* Memberikan jarak atas bawah pada link */
@@ -105,7 +116,7 @@ a {
   box-sizing: border-box; /* Memastikan lebar total termasuk padding dan border */
 }
 
-a:hover {
+.buttons:hover {
   color: #ddd; /* Warna link saat di-hover */
 }
 
@@ -113,15 +124,17 @@ header {
   display: flex; /* Mengaktifkan Flexbox */
   align-items: center; /* Menengahkan item secara vertikal */
   justify-content: center; /* Menjajar item dari awal container */
-  gap: 300px; /* Memberikan jarak antara gambar dan h1 */
-  flex-direction: row-reverse;
 }
 
 .pfp {
-  width: 100px; /* Atau ukuran lain sesuai kebutuhan */
-  height: 100px;
+  width: 130px; /* Atau ukuran lain sesuai kebutuhan */
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
+  position: absolute;
+  top: 13%;
+  left: 27%;
+  box-shadow: 0 0 0 6px #23272a;
 }
 
 footer {
@@ -153,7 +166,8 @@ main {
 
   header {
     flex-direction: row-reverse; /* Menjaga item berdampingan juga pada layar kecil */
-    padding: 10px 0;
+    margin-right: 24%;
+    margin-top: 28px;
   }
 
   .introduction {
@@ -161,8 +175,10 @@ main {
   }
 
   .pfp {
-    width: 80px; /* Menyesuaikan ukuran gambar untuk layar yang lebih kecil */
-    height: 80px;
+    width: 100px; /* Menyesuaikan ukuran gambar untuk layar yang lebih kecil */
+    height: 100px;
+    top: 14%;
+    left: 40%;
   }
 
   header h1 {
