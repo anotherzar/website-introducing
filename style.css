@@ -1,5 +1,5 @@
 body {
-  background-color: #23272a; /* Warna latar belakang gelap */
+  background-color: #0d1117;; /* Warna latar belakang gelap */
   color: #fff; /* Warna tulisan putih */
   font-family: "Work Sans", sans-serif;
   display: flex;
@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-  background-image: url("https://i.pinimg.com/originals/d7/33/34/d733345e4f11231904e7634a04439e21.gif"); /* Ganti dengan URL gambar Anda */
+  background-image: url("https://i.pinimg.com/originals/77/1d/84/771d84144b7dd2d53a8004804f5a0dec.gif"); /* Ganti dengan URL gambar Anda */
   background-size: cover; /* Menutupi seluruh area div, mungkin ter-crop */
   background-position: center; /* Menengahkan gambar */
   height: 20vh; /* Tinggi banner, vh = persentase dari tinggi viewport */
@@ -145,6 +145,10 @@ header h1 {
   opacity: 1;
 }
 
+/* .Link-tree-container {
+  background-color: #0d1117;
+} */
+
 .links {
   display: flex; /* Mengaktifkan Flexbox */
   flex-direction: column; /* Mengatur item flex agar berurutan secara vertikal */
@@ -190,11 +194,11 @@ header {
   position: absolute;
   top: 13%;
   left: 27%;
-  box-shadow: 0 0 0 6px #23272a;
+  box-shadow: 0 0 0 6px #0d1117;
 }
 
 footer {
-  background-color: #1a1a1a; /* Contoh warna background gelap */
+  background-color: #131922;; /* Contoh warna background gelap */
   color: #fff;
   padding: 40px 0;
   text-align: center;
