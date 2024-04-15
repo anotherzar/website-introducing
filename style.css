@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-  background-image: url("https://github.com/anotherzar/website-introducing/blob/main/banner.gif"); /* Ganti dengan URL gambar Anda */
+  background-image: url("Z:\Bachelor of\Eksperimen\1.Linktree\website-introducing\banner.gif"); /* Ganti dengan URL gambar Anda */
   background-size: cover; /* Menutupi seluruh area div, mungkin ter-crop */
   background-position: center; /* Menengahkan gambar */
   height: 20vh; /* Tinggi banner, vh = persentase dari tinggi viewport */
