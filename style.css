@@ -82,6 +82,7 @@ header h1 {
   border: 1px solid #ddd; /* Border untuk card */
   border-radius: 10px; /* Sudut bulat untuk card */
   overflow: hidden; /* Memastikan konten tidak melebihi batas card */
+  background-color: #007cf0;
 }
 
 .card-image {
@@ -101,6 +102,11 @@ header h1 {
   align-items: center; /* Menengahkan item secara horizontal */
   justify-content: center; /* Opsional: Menengahkan item secara vertikal jika diperlukan */
   text-align: center; /* Menengahkan teks pada link */
+  margin-top: 32px;
+}
+
+.links h1{
+  font-size: 34px;
 }
 
 .buttons {
@@ -154,6 +160,15 @@ main {
   margin-top: 74px;
 }
 
+.Project h1 {
+  font-weight: 720;
+}
+
+.kontainer-Project {
+  background-color: red;
+  margin: 24px auto 42px auto;
+}
+
 /* Media query untuk layar dengan lebar maksimum 600px */
 @media (max-width: 600px) {
   header {
@@ -167,7 +182,7 @@ main {
   header {
     flex-direction: row-reverse; /* Menjaga item berdampingan juga pada layar kecil */
     margin-right: 24%;
-    margin-top: 28px;
+    margin-top: 48px;
   }
 
   .introduction {
@@ -177,7 +192,7 @@ main {
   .pfp {
     width: 100px; /* Menyesuaikan ukuran gambar untuk layar yang lebih kecil */
     height: 100px;
-    top: 14%;
+    top: 12%;
     left: 40%;
   }
 
