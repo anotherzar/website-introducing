@@ -108,7 +108,7 @@ header h1 {
 
 .card-image {
   width: 100%; /* Membuat gambar memenuhi lebar card */
-  height: auto; /* Menjaga rasio aspek gambar */
+  height: 100%; /* Menjaga rasio aspek gambar */
   transition: transform 0.3s;
   width: 100%;
   height: auto;
@@ -266,5 +266,25 @@ main {
 
   header h1 {
     font-size: 42px; /* Menyesuaikan ukuran font untuk layar yang lebih kecil */
+  }
+
+  .card {
+    width: 150px; /* Atau lebar yang diinginkan */
+    border: 0.5px solid #ffffff9f; /* Border untuk card */
+    border-radius: 10px; /* Sudut bulat untuk card */
+    overflow: hidden; /* Memastikan konten tidak melebihi batas card */
+    background-color: #0d1117;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 42px;
+    
+  }
+
+  .image-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menengahkan card secara horizontal */
+    gap: 20px; /* Memberikan jarak antar card */
+    padding: 11px 0; /* Padding atas dan bawah untuk section */
   }
 }
