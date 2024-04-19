@@ -225,6 +225,16 @@ main {
 .Project h1 {
   font-weight: 720;
 }
+
+.Playlist{
+  margin-top: 5%;
+  text-align: left;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
 /* Media query untuk layar dengan lebar maksimum 600px */
 @media (max-width: 600px) {
   header {
