@@ -99,6 +99,7 @@ header h1 {
   position: relative;
   overflow: hidden;
   margin-bottom: 42px;
+  
 }
 
 .card:hover{
@@ -112,6 +113,7 @@ header h1 {
   width: 100%;
   height: auto;
   position: relative;
+  object-fit: cover;
 }
 
 .card:hover .card-image {
