@@ -1,5 +1,5 @@
 body {
-  background-color: #0d1117;; /* Warna latar belakang gelap */
+  background-color: #0d1117; /* Warna latar belakang gelap */
   color: #fff; /* Warna tulisan putih */
   font-family: "Work Sans", sans-serif;
   display: flex;
@@ -55,11 +55,11 @@ header h1 {
   box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
   box-shadow: 0 0 0 0.5px #ffffff9f;
 }
-.introduction h2{
-    text-align: left;
-    font-family: "Inconsolata", monospace;
-    font-weight: 500;
-    font-size: 14px;
+.introduction h2 {
+  text-align: left;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .MyDetail {
@@ -99,10 +99,9 @@ header h1 {
   position: relative;
   overflow: hidden;
   margin-bottom: 42px;
-  
 }
 
-.card:hover{
+.card:hover {
   border: 0.5px solid #48ff00;
 }
 
@@ -160,7 +159,7 @@ header h1 {
   margin-top: 32px;
 }
 
-.links h1{
+.links h1 {
   font-size: 34px;
 }
 
@@ -200,7 +199,7 @@ header {
 }
 
 footer {
-  background-color: #131922;; /* Contoh warna background gelap */
+  background-color: #131922; /* Contoh warna background gelap */
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -221,14 +220,14 @@ main {
   margin: 12px auto; /* Mengatur margin menjadi tengah horizontal */
   max-width: 65%;
   font-weight: 600;
-  color:#adadad;
+  color: #adadad;
 }
 
 .Project h1 {
   font-weight: 720;
 }
 
-.Playlist{
+.Playlist {
   margin-top: 5%;
   text-align: left;
   font-family: "Inconsolata", monospace;
@@ -236,6 +235,65 @@ main {
   font-size: 14px;
 }
 
+.slider-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 34px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px; /* Lebar gradasi */
+  height: 100%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  background: linear-gradient(to right, #0d1117, transparent);
+}
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, #0d1117, transparent);
+}
+
+.slide-track {
+  display: flex;
+  width: calc(100% * 6); /* Menghitung lebar berdasarkan jumlah gambar */
+  animation: scroll 20s linear infinite;
+  gap: 120px;
+}
+
+.slide-track img {
+  height: 90px;
+  width: auto;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(100% / 3));
+  }
+  100% {
+    transform: translateX(calc(-100% / 3)); /* Geser sejauh sepertiga dari total lebar untuk menciptakan efek infinite */
+  }
+}
 
 /* Media query untuk layar dengan lebar maksimum 600px */
 @media (max-width: 600px) {
@@ -277,7 +335,6 @@ main {
     position: relative;
     overflow: hidden;
     margin-bottom: 42px;
-    
   }
 
   .image-cards {
@@ -286,5 +343,58 @@ main {
     justify-content: center; /* Menengahkan card secara horizontal */
     gap: 20px; /* Memberikan jarak antar card */
     padding: 11px 0; /* Padding atas dan bawah untuk section */
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px; /* Lebar gradasi */
+    height: 100%;
+    z-index: 2;
+  }
+
+  .slider::before {
+    left: 0;
+    background: linear-gradient(to right, #0d1117, transparent);
+  }
+
+  .slider::after {
+    right: 0;
+    background: linear-gradient(to left, #0d1117, transparent);
+  }
+
+  .slide-track {
+    display: flex;
+    width: calc(100% * 6); /* Menghitung lebar berdasarkan jumlah gambar */
+    animation: scroll 20s linear infinite;
+    gap: 25px;
+  }
+
+  .slide-track img {
+    height: 48px;
+    width: auto;
+    align-items: center;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(calc(100% / 3));
+    }
+    100% {
+      transform: translateX(calc(-100% / 3)); /* Geser sejauh satu gambar untuk menciptakan efek infinite */
+    }
   }
 }
